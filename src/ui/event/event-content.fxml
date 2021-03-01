@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TableView?>
+<BorderPane prefHeight="457.0" prefWidth="748.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.event.EventContent">
+    <top>
+        <BorderPane nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="TOP_LEFT">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+            <center>
+                <Label fx:id="nameLabel" alignment="TOP_LEFT" text="nome" BorderPane.alignment="CENTER_LEFT">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </center>
+            <right>
+                <FlowPane alignment="CENTER" hgap="5.0" prefHeight="39.0" prefWidth="517.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="editNameButton" mnemonicParsing="false" onAction="#editSchedaButtonPressed" text="Modifica info">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="assegnaChef" mnemonicParsing="false" onAction="#assegnaChefButtonPressed" text="Assegna Chef">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="scegliPersonale" mnemonicParsing="false" onAction="#chooseEmployee" text="Scegli personale">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </BorderPane.margin>
+                </FlowPane>
+            </right>
+        </BorderPane>
+    </top>
+    <center>
+        <BorderPane fx:id="schedeListPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #aaaaaa; -fx-border-width: 1;" GridPane.columnIndex="0">
+            <top>
+                <Label fx:id="schedaName" prefHeight="17.0" prefWidth="272.0" text="Schede:" BorderPane.alignment="CENTER_LEFT">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </BorderPane.margin>
+                </Label>
+            </top>
+            <center>
+                <ListView fx:id="schedaList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+            </center>
+            <bottom>
+                <FlowPane alignment="CENTER" hgap="5.0" prefHeight="38.0" prefWidth="264.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="addSchedaButton"  mnemonicParsing="false" onAction="#addServicePressed" text="Aggiungi un servizio" />
+                        <Button fx:id="deleteScheda" mnemonicParsing="false" onAction="#deleteServicePressed" text="Elimina" />
+                        <Button fx:id="modificaScheda" mnemonicParsing="false" onAction="#modificaServicePressed" text="Modifica" />
+                    </children>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                </FlowPane>
+            </bottom>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <GridPane.margin>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </GridPane.margin>
+        </BorderPane>
+        <BorderPane fx:id="serviceListPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #aaaaaa; -fx-border-width: 1;" GridPane.columnIndex="1">
+            <top>
+                <Label fx:id="serviceTitle" prefHeight="17.0" prefWidth="272.0" text="Servizi:" BorderPane.alignment="CENTER_LEFT">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </BorderPane.margin>
+                </Label>
+            </top>
+            <center>
+                <ListView fx:id="serviceList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+            </center>
+            <bottom>
+                <FlowPane alignment="CENTER" hgap="5.0" prefHeight="38.0" prefWidth="264.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="addServiceButton" disable="true" mnemonicParsing="false" onAction="#addServicePressed" text="Aggiungi un servizio" />
+                        <Button fx:id="deleteService" disable="true" mnemonicParsing="false" onAction="#deleteServicePressed" text="Elimina" />
+                        <Button fx:id="modificaServiceButton" disable="true" mnemonicParsing="false" onAction="#modificaServicePressed" text="Modifica" />
+                        <Button fx:id="menuServiceButton" disable="true" mnemonicParsing="false" onAction="#chooseMenuForService" text="Scegli Menù" />
+                    </children>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                </FlowPane>
+            </bottom>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <GridPane.margin>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </GridPane.margin>
+        </BorderPane>
+    </center>
+    <bottom>
+        <FlowPane alignment="CENTER" hgap="5.0" prefHeight="39.0" prefWidth="517.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#endButtonPressed" text="Termina evento e chiudi">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#exitButtonPressed" text="Esci">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </FlowPane>
+    </bottom>
+</BorderPane>
