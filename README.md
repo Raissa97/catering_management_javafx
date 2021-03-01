@@ -1,5 +1,5 @@
 # catering_management_javafx
-##Cat&Ring 2019-2020
+## Cat&Ring 2019-2020
 Cat & Ring si propone come un’applicazione che permette di gestire una società di catering  in tutti i suoi aspetti: organizzazione eventi e cucina.
 Introduzione 
 La società di catering si occupa di fornire un servizio di pranzo/cena/aperitivo/buffet/coffee break nel contesto di eventi sociali o aziendali.
@@ -13,12 +13,12 @@ Gli eventi possono essere classificati come ricorrenti nel caso in cui si ripeta
 Ciascun evento o giornata di un evento, dal punto di vista della società di catering, prevede due momenti diversi di lavoro: il lavoro preparatorio che si svolge in sede, e il servizio, che si svolge nel luogo dell’evento, e che può andare dal semplice buffet all’allestimento di una vera e propria sala ristorante. 
 
 
-##I turni
+## I turni
 Gli organizzatori e gli chef non hanno particolari turni, mentre le figure restanti hanno turni ben definiti, in quanto non ci si aspetta che lavorino a tempo pieno per la società.
 Per ogni giorno sono previsti diversi turni di lavoro, definiti dall’organizzatore in sede di configurazione: si dividono in turni preparatori in sede  (ad es: mattina, 7.30-12.30, e pomeriggio, 14-19) e turni di servizio prima dell’evento stesso e che prevedono sempre un tempo di briefing prima dell’evento stesso, il tempo di allestimento iniziale e il tempo di pulizie al termine (ad es: morning break, 8.30-12; pranzo, 11.30-15.30, afternoon break 15.00-17.30, aperitivo 17.30-21.30, cena 18.30-23.30) che si svolgono sul luogo dell’evento. 
 Il personale potrà indicare la propria disponibilità per i diversi turni e/o giorni (a seconda della tipologia di personale: il personale di servizio solo nei turni di servizio, mentre i cuochi possono essere disponibili in entrambe le situazioni in quanto anche durante il servizio possono essere necessarie attività di cucina). 
 I cuochi possono essere chiamati per un turno di cucina dagli chef che la gestiscono. Il personale di sala e gli stessi cuochi possono essere chiamati per un turno di servizio dall’organizzatore di un evento. Per quanto riguarda i turni di cucina, uno chef potrà contrassegnare  un turno come “completo” qualora ritenesse che non c’è spazio o attrezzatura per aggiungere altre attività. A quel punto non sarà più possibile chiamare cuochi in quel turno.
-###2. Organizzazione di un evento
+### 2. Organizzazione di un evento
 Quando arriva una richiesta per un evento, uno degli organizzatori se ne fa carico. Egli dovrà creare una scheda per l’evento (specificando luogo, date, tipo di servizio per le varie giornate, numero di persone, ed eventuali note particolari), e affidare ciò che riguarda la cucina ad uno chef. A quel punto l’organizzatore segue la gestione  del servizio durante l’evento, mentre lo  chef è responsabile della preparazione delle ricette in sede. 
 
 Per quanto riguarda il servizio durante l’evento l’organizzatore dovrà scegliere il personale di servizio per ogni turno di servizio associato all’evento, indicando il ruolo che avrà in quella particolare situazione (es. Mario→servire le bevande, Luisa→girare in sala offrendo finger food). Se nel menù servito in quel turno ci sono ricette che prevedono passaggi non banali da svolgere all’ultimo, l’organizzatore può anche decidere di assegnare un  cuoco a quel particolare servizio (non necessariamente  in tutti i servizi di quell’evento). 
@@ -28,7 +28,7 @@ Lo chef dal canto suo dovrà individuare uno o più menù adeguati per l’event
 Prima di approvare i menù l’organizzatore può proporre delle modifiche ai menù, suggerendo piatti da aggiungere o togliere, ovviamente questo non modifica i menù originali scelti dagli chef; queste proposte restano visibili come aggiunte o eliminazioni limitate all’evento in questione. Lo chef potrà decidere se “tenere” le proposte dell’organizzatore o rimuoverle. 
 
 Al termine di un evento l’organizzatore lo “chiude” aggiungendo eventuali note e allegando documentazione rilevante. 
-###3. Assegnamento dei compiti di cucina
+### 3. Assegnamento dei compiti di cucina
 Per quanto riguarda la preparazione del cibo in sede, è lo chef ad assegnare i compiti ai cuochi nei diversi turni di preparazione. I compiti includono la realizzazione dei preparati intermedi e delle ricette finali. Più cuochi possono lavorare alla stessa ricetta, ad esempio preparando ciascuno una parte delle porzioni richieste. Non è invece previsto che più cuochi si dividano la procedura da realizzare “verticalmente” (ossia facendo ciascuno solo alcune preparazioni) perché in tal caso ci si aspetta invece che la procedura venga suddivisa a livello di ricettario in preparazioni separate.
 Ad esempio: se ci sono da fare 10 teglie di lasagne, è possibile affidarne 5 a un cuoco e 5 ad un altro, ma non è possibile affidare la preparazione della sfoglia a un cuoco e la preparazione del ragù ad un altro, a meno che sfoglia all’uovo e ragù non siano due preparazioni distinte nel ricettario. Quindi se si vogliono dividere i compiti in questo modo, nel ricettario ci dovranno essere tre preparazioni, “sfoglia all’uovo”, “ragù” e “lasagne”, e la ricetta delle lasagne dovrà prevedere come ingredienti la sfoglia all’uovo e il ragù. A quel punto se nel menù ci sono le lasagne, lo chef si troverà a dover assegnare tutte e tre le preparazioni, e potrà assegnarle a persone diverse. Se invece nel ricettario c’è solo la ricetta delle lasagne, lo chef potrà solo assegnarla tutta intera.
 
@@ -36,7 +36,7 @@ Quando assegna un’attività, lo chef deve anche dare (sfruttando le informazio
 
 Lo chef e l’organizzatore possono inoltre monitorare lo svolgimento delle attività perché i cuochi, man mano che portano a termine un compito, contrassegnano la ricetta o procedura come “completata”. In questo modo chef e organizzatore possono verificare che tutto stia procedendo come deve ed operare eventuali aggiustamenti in corsa.
 
-###4. Ricette e Preparazioni
+### 4. Ricette e Preparazioni
 Il ricettario contiene ricette e preparazioni; si tratta di concetti molto simili, la differenza è che una ricetta descrive come preparare un piatto da servire a tavola, mentre una preparazione descrive come realizzare un preparato da utilizzare in un’altra. 
 
 Chef e cuochi possono inserire ricette o preparazioni nel ricettario; solo il proprietario di una ricetta o preparazione  (chi la ha inserita) può però eliminarla o modificarla, e può farlo solo fintanto che la ricetta non è in uso in alcun menù. Se un utente vuole modificare una propria ricetta attualmente in uso, o una ricetta di un altro proprietario, può crearne una copia da modificare liberamente.
@@ -67,7 +67,7 @@ Questo avrà due effetti automatici:
 Creare una nuova preparazione con le istruzioni e gli ingredienti scelti. L’utente dovrà poi completare le informazioni mancanti.
 Rimuovere le istruzioni scelte dalla ricetta corrente, diminuisce in modo opportuno le dosi (o elimina del tutto se necessario) degli ingredienti spostati, e inserire la nuova preparazione fra gli ingredienti di quella ricetta.
 
-###5. I menù
+### 5. I menù
 Lo chef costruisce i suoi menù a partire dalle ricette nel ricettario. Un menù si compone di diverse voci, opzionalmente divise in diverse sezioni (potrebbe anche esserci una sezione sola corrispondente all’intero menù). 
 Ogni voce fa riferimento ad una ricetta nel ricettario, ma il testo della voce può anche essere diverso dal nome della ricetta (ad esempio, la ricetta potrebbe chiamarsi “Vitello tonnato” mentre la voce di menu essere “girello di fassone con salsa tonnata”).
 
@@ -79,7 +79,7 @@ se è adeguato per un buffet
 se può essere fruito senza posate (finger food)
 
 Lo chef può modificare i suoi menù liberamente fintanto che non sono utilizzati in nessun evento. Nel momento in cui un menù viene utilizzato per un evento non può più essere modificato, sarà però possibile crearne uno nuovo partendo da una copia di quello esistente. Lo stesso avviene se lo chef desidera creare un menù a partire da uno esistente fatto da un altro chef.
-###6. Esempi di eventi per cui potrebbe essere richiesto il catering
+### 6. Esempi di eventi per cui potrebbe essere richiesto il catering
 Esempi di eventi singoli
 pranzo di laurea 1 menù
 aperitivo aziendale  1 menù
